@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "webcache"
+version = "0.1.0"
+description = ""
+authors = ["John <thejohnrudy@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.30.1"
+fastapi = "^0.111.1"
+pydantic = "^2.8.2"
+pydantic-settings = "^2.3.4"
+httpx = "^0.27.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.0"
+autoflake = "^2.3.1"
+isort = "^5.13.2"
+flake8 = "^7.1.0"
+black = "^24.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
